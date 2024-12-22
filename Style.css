@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(5, 200px);
+    gap: 0;
+}
+
+.square {
+    display: inline-block;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    transition: background-color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+/* Estilo para os quadrados dos cantos */
+.corner {
+    border: 2px solid #000; /* Borda mais escura */
+}
+
+/* Alterar cor ao passar o mouse nos quadrados dos cantos */
+.corner:hover {
+    background-color: black; /* Cor ao passar o mouse */
+    cursor: pointer; /* Indica que algo acontece */
+}
